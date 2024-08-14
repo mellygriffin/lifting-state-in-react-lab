@@ -1,6 +1,7 @@
 /* src/App.css */
 * {
   box-sizing: border-box;
+  background-color: darkgray;
 }
 
 :root {
@@ -44,6 +45,7 @@ section {
 
 h1 {
   text-align: center;
+  color: white;
 }
 
 ul {
