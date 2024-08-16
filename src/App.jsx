@@ -31,6 +31,11 @@ const App = () => {
     console.log([...stack, newIngredient]);
   };
 
+  const removeFromBurger = (ingredient) => {
+    let newStack = stack.filter(i => i !== ingredient);
+    setStack(newStack);
+  };
+
 
   return (
     <main>
@@ -38,7 +43,7 @@ const App = () => {
       <section>
       <IngredientList addToBurger={addToBurger}
       ingredients={availableIngredients}/>
-      <BurgerStack stack={stack}/>
+      <BurgerStack stack={stack} removeFromBurger={removeFromBurger}/>
       </section>
     </main>
   );
